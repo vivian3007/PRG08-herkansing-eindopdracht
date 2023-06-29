@@ -1,0 +1,165 @@
+{
+  "name": "class_type >= 2 ?",
+  "children": [
+    {
+      "name": "yes",
+      "children": [
+        {
+          "name": "legs >= 6 ?",
+          "children": [
+            {
+              "name": "yes",
+              "children": [
+                {
+                  "name": "predator >= 1 ?",
+                  "children": [
+                    {
+                      "name": "yes",
+                      "children": [
+                        {
+                          "name": "0"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "no",
+                      "children": [
+                        {
+                          "name": "venomous >= 1 ?",
+                          "children": [
+                            {
+                              "name": "yes",
+                              "children": [
+                                {
+                                  "name": "1"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "no",
+                              "children": [
+                                {
+                                  "name": "animal_name == moth ?",
+                                  "children": [
+                                    {
+                                      "name": "yes",
+                                      "children": [
+                                        {
+                                          "name": "1"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "name": "no",
+                                      "children": [
+                                        {
+                                          "name": "animal_name == housefly ?",
+                                          "children": [
+                                            {
+                                              "name": "yes",
+                                              "children": [
+                                                {
+                                                  "name": "1"
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "name": "no",
+                                              "children": [
+                                                {
+                                                  "name": "0"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "no",
+              "children": [
+                {
+                  "name": "0"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "no",
+      "children": [
+        {
+          "name": "legs >= 2 ?",
+          "children": [
+            {
+              "name": "yes",
+              "children": [
+                {
+                  "name": "1"
+                }
+              ]
+            },
+            {
+              "name": "no",
+              "children": [
+                {
+                  "name": "tail >= 1 ?",
+                  "children": [
+                    {
+                      "name": "yes",
+                      "children": [
+                        {
+                          "name": "0"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "no",
+                      "children": [
+                        {
+                          "name": "animal_name == seal ?",
+                          "children": [
+                            {
+                              "name": "yes",
+                              "children": [
+                                {
+                                  "name": "1"
+                                }
+                              ]
+                            },
+                            {
+                              "name": "no",
+                              "children": [
+                                {
+                                  "name": "undefined"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

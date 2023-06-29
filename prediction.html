@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script defer src="prediction.js" type="module"></script>
+    <title>Eindopdracht programmeren 8</title>
+</head>
+
+<body>
+<div>
+    <h1>Zoo animals: domestic or not?</h1>
+    <p>Answer these questions with your animal in mind and see if it's domestic or not!</p>
+</div>
+<div id="venomous">
+    <label>Is the animal venomous?</label>
+    <div class="radio-group">
+        <input type="radio" name="venomous" value="yes" id="venomousYes">
+        <label for="venomousYes">Yes</label>
+        <input type="radio" name="venomous" value="no" id="venomousNo">
+        <label for="venomousNo">No</label>
+    </div>
+    <br>
+</div>
+<div id="catsized">
+    <label>Is the animal cat-sized?</label>
+    <div class="radio-group">
+        <input type="radio" name="catsized" value="yes" id="catsizedYes">
+        <label for="catsizedYes">Yes</label>
+        <input type="radio" name="catsized" value="no" id="catsizedNo">
+        <label for="catsizedNo">No</label>
+    </div>
+    <br>
+</div>
+<div id="predator">
+    <label>Is the animal a predator?</label><br>
+    <div class="radio-group">
+        <input type="radio" name="predator" value="yes" id="predatorYes">
+        <label for="predatorYes">Yes</label>
+        <input type="radio" name="predator" value="no" id="predatorNo">
+        <label for="predatorNo">No</label>
+    </div>
+    <br>
+</div>
+
+<button id="predictButton">Is the animal domestic?</button>
+
+<div id="predict">
+
+</div>
+</body>
+</html>
